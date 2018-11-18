@@ -1,8 +1,8 @@
-#GoT bio SPA 
+# GoT bio SPA 
 
 Simple single page app project for LTX
 
-###Running it
+### Running it
 To run `npm i` then `npm start` 
 
 This should be all that is required to run this, but let me know if any errors are encountered. I had a strange one that I haven't seen in my usual node development when I was first sketching this out, but I think I've restructed it in a way that the error shouldn't happen (memory ran out for the test server, seemingly due to putting the .csv into /public, which is strange as it's a pretty small file)
@@ -14,7 +14,7 @@ ag-grid - library for creating grid layout, used for the character select scroll
 csv - csv parser
 
 
-###NOTES: 
+### NOTES: 
 All the app logic is contained in the Bio.js file. I'm thinking of breaking it up a little bit, but it isn't particularly long as it stands. I've gone with a frontend logic only approach, I considered using express to serve up the .csv but decided against it.
 
 Goals I'd like to clarify my approach to/how I'd approach them later:
@@ -30,7 +30,7 @@ Goals I'd like to clarify my approach to/how I'd approach them later:
 "Enable the user to display an area that has a pie chart of the proportional genders of the entries" : This one doesn't seem too bad, but I was mostly focused on making the core functionality clean today, I'll try and implement it tomorrow using a graph library for node, it'd just be a hidden extra view as another child of the overall biography container that shows a breakdown of gender when a button is clicked. Feeding the information into it would be easiest early on after the initial rendering is done, and its really just a quick tally of the list for isMale. 
 
 
-Other stuff:
+#### Other stuff:
 
 It'd be nice to tweak some of the .css since there are certain bits that shift around erratically and thats bothersome (buttons and the bio text causes the divs to move)
 
